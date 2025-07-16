@@ -64,3 +64,39 @@
     -fx-vgap: 15;
     -fx-hgap: 10;
 }
+
+.chart-plot-background {
+    -fx-background-color: #34495E;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item, 
+.chart-title, 
+.chart-legend-item-symbol {
+    -fx-text-fill: #ECF0F1;
+}
+
+.chart-series-line {
+    -fx-stroke: #ECF0F1;
+}
+
+.chart-symbol {
+    -fx-background-color: #ECF0F1, white;
+}
+
+.chart-axis .axis-label, 
+.chart-axis .tick-label {
+    -fx-text-fill: #ECF0F1;
+}
+
+.tooltip {
+    -fx-background-color: #2B3E50;
+    -fx-text-fill: #ECF0F1;
+}
+
+.tooltip .label {
+    -fx-text-fill: #ECF0F1;
+}

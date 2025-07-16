@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.fisica.projeto.controller.GraphController"
+      alignment="CENTER" spacing="20" styleClass="root" stylesheets="@styles.css">
+    
+    <LineChart fx:id="chart" prefWidth="700" prefHeight="500">
+        <xAxis>
+            <NumberAxis fx:id="xAxis" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" tickLabelFill="WHITE" />
+        </yAxis>
+    </LineChart>
+    
+    <HBox alignment="CENTER" spacing="20">
+        <Button fx:id="exportButton" text="Exportar CSV" 
+                onAction="#handleExportClick" styleClass="button-primary" prefWidth="120" />
+        <Button fx:id="backButton" text="Voltar" 
+                onAction="#handleBackClick" styleClass="button-secondary" prefWidth="120" />
+    </HBox>
+</VBox>

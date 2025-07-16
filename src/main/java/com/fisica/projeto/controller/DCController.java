@@ -5,6 +5,7 @@ import com.fisica.projeto.model.Circuit;
 import com.fisica.projeto.model.DCVoltageSource;
 import com.fisica.projeto.solver.RungeKuttaSolver;
 import com.fisica.projeto.solver.SimulationResult;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -53,8 +54,8 @@ public class DCController {
             System.out.println("Simulação DC concluída com sucesso!");
             System.out.println("Total de pontos gerados: " + result.getTimePoints().size());
 
-            // TODO: Chamar o método no Main para mostrar a tela do gráfico
-            // Ex: mainApp.showGraphScreen(result);
+            mainApp.showGraphScreen(result);
+
         } catch (NumberFormatException e) {
             showAlert("Erro de Entrada", "Por favor, preencha todos os campos com valores numéricos válidos.");
         } catch (Exception e) {

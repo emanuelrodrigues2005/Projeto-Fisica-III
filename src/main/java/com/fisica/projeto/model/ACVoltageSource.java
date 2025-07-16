@@ -1,4 +1,4 @@
-package Model;
+package com.fisica.projeto.model;
 
 public class ACVoltageSource extends VoltageSource {
     private double amplitudeVolts;

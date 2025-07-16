@@ -1,7 +1,7 @@
-package Solver;
+package com.fisica.projeto.solver;
 
-import Model.Circuit;
-import Model.VoltageSource;
+import com.fisica.projeto.model.Circuit;
+import com.fisica.projeto.model.VoltageSource;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Model;
+package com.fisica.projeto.model;
 
 public class Circuit {
     private Double resistor;

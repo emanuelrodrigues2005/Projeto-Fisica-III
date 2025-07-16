@@ -1,4 +1,4 @@
-package Solver;
+package com.fisica.projeto.solver;
 
 import java.util.List;
 

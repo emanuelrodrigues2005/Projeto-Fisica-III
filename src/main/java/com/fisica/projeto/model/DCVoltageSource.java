@@ -1,4 +1,4 @@
-package Model;
+package com.fisica.projeto.model;
 
 public class DCVoltageSource extends VoltageSource {
     private Double constantVoltage;

@@ -1,0 +1,66 @@
+.root {
+    -fx-background-color: #2B3E50;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.label {
+    -fx-text-fill: #ECF0F1;
+    -fx-font-size: 11pt;
+}
+
+.title-label {
+    -fx-font-size: 22pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.description-label {
+    -fx-text-fill: #BDC3C7;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 3);
+    -fx-transition: all 0.2s;
+}
+
+.button-primary {
+    -fx-background-color: #3498DB;
+    -fx-font-size: 12pt;
+}
+.button-primary:hover {
+    -fx-background-color: #5DADE2;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button-secondary {
+    -fx-background-color: #7F8C8D;
+}
+.button-secondary:hover {
+    -fx-background-color: #95A5A6;
+}
+
+.text-field {
+    -fx-background-color: #34495E;
+    -fx-text-fill: #ECF0F1;
+    -fx-prompt-text-fill: #95A5A6;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+    -fx-font-size: 11pt;
+    -fx-padding: 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #3498DB;
+    -fx-border-width: 2;
+}
+
+.grid-pane {
+    -fx-vgap: 15;
+    -fx-hgap: 10;
+}

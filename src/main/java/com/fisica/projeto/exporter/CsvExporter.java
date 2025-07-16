@@ -1,6 +1,6 @@
-package Exporter;
+package com.fisica.projeto.exporter;
 
-import Solver.SimulationResult;
+import com.fisica.projeto.solver.SimulationResult;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;

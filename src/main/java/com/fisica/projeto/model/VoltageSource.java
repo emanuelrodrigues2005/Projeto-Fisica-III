@@ -1,4 +1,4 @@
-package Model;
+package com.fisica.projeto.model;
 
 public abstract class VoltageSource {
     public abstract Double getVoltage(Double time);

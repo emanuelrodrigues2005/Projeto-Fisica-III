@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="25.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fisica.projeto.controller.DCController">
+    <children>
+        <Label styleClass="title-label" text="Circuito RLC - Fonte Contínua (DC)" />
+        <GridPane maxWidth="450.0" styleClass="grid-pane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints /> <RowConstraints /> <RowConstraints />
+                <RowConstraints /> <RowConstraints /> <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label text="Resistência (R):" />
+                <TextField fx:id="resistorField" promptText="Ex: 10.0 (Ω)" GridPane.columnIndex="1" />
+                <Label text="Capacitância (C):" GridPane.rowIndex="1" />
+                <TextField fx:id="capacitorField" promptText="Ex: 0.001 (F)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Indutância (L):" GridPane.rowIndex="2" />
+                <TextField fx:id="inductorField" promptText="Ex: 0.1 (H)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Tensão da Fonte (V):" GridPane.rowIndex="3" />
+                <TextField fx:id="voltageField" promptText="Ex: 12.0 (V)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Tempo Total de Simulação (s):" GridPane.rowIndex="4" />
+                <TextField fx:id="totalTimeField" promptText="Ex: 1.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Passo de Tempo (h):" GridPane.rowIndex="5" />
+                <TextField fx:id="timeStepField" promptText="Ex: 0.0001" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackClick" prefWidth="120.0" styleClass="button-secondary" text="Voltar" />
+                <Button fx:id="simulateButton" mnemonicParsing="false" onAction="#handleSimulateClick" prefWidth="120.0" styleClass="button-primary" text="Simular" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
